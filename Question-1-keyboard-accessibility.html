@@ -312,13 +312,13 @@ article p {
           <article>
               <img src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/football.jpg?raw=true" 
                    alt="A football player hands the ball off to a teammate during a game" />
-              <div class="info">
-                <h3 class="headline">
-                  Sportsball team scores a touchdown to win the big game.
-                  <a href="#" aria-label="Read more about the winning football game and its highlights">Read More</a>
-              </h3>
-              
-              </div>
+                   <div class="info">
+                    <h3 class="headline">
+                        Sportsball team scores a touchdown to win the big game.
+                        <a href="#">Read More</a>
+                    </h3>
+                </div>
+                
           </article>
       </div>
   </div>
@@ -331,9 +331,13 @@ article p {
   
   <script>
     function getFocus() {
-      window.open('https://aidaform.com/templates/thank-you-page-with-redirects.html','mywindow').focus()
+        // Provide a clear label or description about the action.
+        if (confirm("You are about to open a new window. Do you want to proceed?")) {
+            window.open('https://aidaform.com/templates/thank-you-page-with-redirects.html','mywindow').focus();
+        }
     }
-    </script>
+</script>
+
 </body>
 
 </html>
