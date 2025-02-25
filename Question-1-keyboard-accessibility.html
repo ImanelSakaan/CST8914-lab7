@@ -226,11 +226,11 @@ article p {
 
     <!-- Button with a clear action description for accessibility -->
     <form action="/submit-newsletter" method="post">
-      <!-- Improved the accessibility of the button's label by adding aria-label for clearer context -->
-      <button type="submit" aria-label="Sign up for the newsletter to receive updates and promotions" aria-live="polite">Sign up</button>
-  </form>
-  
+        <!-- Improved button with descriptive aria-label for screen readers -->
+        <button type="submit" aria-label="Sign up for the newsletter to receive updates and promotions">Sign up</button>
+    </form>
 </div>
+
 
 </div>
 
@@ -241,15 +241,17 @@ article p {
            src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/cat.jpg?raw=true" 
            alt="A cat staring menacingly off into space, with intense focus" />
     
-      <div class="info">
-          <h3 class="headline">
-              Study shows 9 out of 10 cats quietly judging their owners while they sleep: The rise of feline judgment
-          </h3>
-          <p>
-              GRAND RAPIDS: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              <a href="#" aria-label="Read more about the study on cats judging their owners while they sleep">Read More</a>
-          </p>
-      </div>
+           <div class="info">
+            <h3 class="headline">
+                Study shows 9 out of 10 cats quietly judging their owners while they sleep: The rise of feline judgment
+            </h3>
+            <p>
+                GRAND RAPIDS: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+                <!-- Improved link text with more context for accessibility -->
+                <a href="#" aria-label="Read more about the study on cats judging their owners while they sleep and the rise of feline judgment">Read more about the study on feline judgment</a>
+            </p>
+        </div>
+        
   </article>
 
   <div class="side-by-side">
