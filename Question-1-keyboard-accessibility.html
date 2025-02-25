@@ -218,16 +218,20 @@ article p {
 
 <div class="newsletter">
   <div class="container">
-      <h2>Like Funions? Consider joining our newsletter to stay updated on promotions and new flavors!</h2>
+    <h2>Like Funions? Consider joining our newsletter to stay updated on promotions and new flavors!</h2>
 
-      <!-- Label added for accessibility -->
-      <label for="email">Enter your email address:</label>
-      <input type="email" id="email" name="email" placeholder="Your email address" aria-required="true">
+    <!-- Label added for accessibility -->
+    <label for="email">Enter your email address:</label>
+    <input type="email" id="email" name="email" placeholder="Your email address" aria-required="true">
 
-      <!-- Button with a clear action description for accessibility -->
-      <button type="button" onclick="getFocus()" aria-label="Sign up for the newsletter to receive updates and promotions">Sign up</button>
+    <!-- Button with a clear action description for accessibility -->
+    <form action="/submit-newsletter" method="post">
+      <!-- Improved the accessibility of the button's label by adding aria-label for clearer context -->
+      <button type="submit" aria-label="Sign up for the newsletter to receive updates and promotions" aria-live="polite">Sign up</button>
+  </form>
+  
+</div>
 
-  </div>
 </div>
 
 <main class="container">
@@ -254,15 +258,17 @@ article p {
               <h2 tabindex="0">In the news</h2>
           </div>
           <article>
-              <h3 class="headline">
-                  Bee wonders if maybe everyone else is a drone and he's the only one who has it all "figured out" – The life of a misunderstood bee.
-              </h3>
-              <p>
-                <button type="button">Read More</button>
+            <h3 class="headline">
+                Bee wonders if maybe everyone else is a drone and he's the only one who has it all "figured out" – The life of a misunderstood bee.
+            </h3>
+            <p>
+              <!-- Improved button with aria-label for screen readers -->
+              <button type="button" aria-label="Read more about the misunderstood bee story and its life">Read More</button>
             </p>
-               <img src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/bee.jpg?raw=true" 
-                   alt="Close-up of a bee sitting on a vibrant flower, looking inquisitive" />
+            <img src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/bee.jpg?raw=true" 
+                 alt="Close-up of a bee sitting on a vibrant flower, looking inquisitive" />
           </article>
+          
       </div>
     
       <div class="column">
