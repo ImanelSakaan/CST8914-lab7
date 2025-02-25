@@ -200,7 +200,7 @@ article p {
   <header>
 
     <div class="container">
-      <h1 class="logo">The Funion - Your Source for Fun News and Stories</h1>
+      <h1 class="logo">The Funion</h1>
        <!-- Maybe this could be improved with aria-activedescendant later? -->
       <nav class="menu">
         <a href="#">Home</a>
@@ -216,10 +216,14 @@ article p {
   <div class="newsletter">
     <div class="container">
       <h3>Like the Funion? Consider joining our newsletter!</h3>
-      <input type="text">
-      <button type="button" onfocus="getFocus()">Sign up</button></div>
       
-    </div>
+      <!-- Label added for the input field for accessibility -->
+      <label for="email">Enter your email address:</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" aria-required="true">
+  
+      <button type="button" onfocus="getFocus()">Sign up</button>
+  </div>
+  
   </div>
   <main class="container">
     <h2 class="offscreen">Top story</h2>
