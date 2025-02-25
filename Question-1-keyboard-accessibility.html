@@ -216,133 +216,112 @@ article p {
     </div>
 </header>
 
-  <div class="newsletter">
-    <div class="container">
+<div class="newsletter">
+  <div class="container">
       <h3>Like Funions? Consider joining our newsletter to stay updated on promotions and new flavors!</h3>
 
-      <input type="text">
-      <button type="button" onfocus="getFocus()">Sign up</button></div>
-      
-    </div>
+      <!-- Label added for accessibility -->
+      <label for="email">Enter your email address:</label>
+      <input type="email" id="email" name="email" placeholder="Your email address" aria-required="true">
+
+      <!-- Button with a clear action description for accessibility -->
+      <button type="button" onclick="getFocus()" aria-label="Sign up for the newsletter">Sign up</button>
   </div>
-  <main class="container">
-    <h2 class="offscreen">Top story</h2>
-    <article class="main-story">
-      <!-- Improved alt text for better accessibility -->
+</div>
+
+<main class="container">
+  <h2 class="offscreen">Top story</h2>
+  <article class="main-story">
       <img class="pull-right" 
            src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/cat.jpg?raw=true" 
            alt="A cat staring menacingly off into space, with intense focus" />
-      
+    
       <div class="info">
-        <h3 class="headline">
-          Study shows 9 out of 10 cats quietly judging their owners while they sleep: The rise of feline judgment
-      </h3>
-      
+          <h3 class="headline">
+              Study shows 9 out of 10 cats quietly judging their owners while they sleep: The rise of feline judgment
+          </h3>
           <p>
               GRAND RAPIDS: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-              <!-- Added aria-label to improve link context for screen readers -->
               <a href="#" aria-label="Read more about the study on cats judging their owners while they sleep">Read More</a>
           </p>
       </div>
   </article>
-  
-  
-    <div class="side-by-side">
-      <div class="column">
-        <div class="tier-header">
-          <h2 tabindex="0">In the news</h2>
-        </div>
-        <article>
-          <h3 class="headline">
-            Bee wonders if maybe everyone else is a drone and he's the only one who has it all "figured out" – The life of a misunderstood bee.
-        </h3>
-        
-          <!-- Corrected anchor text for better accessibility -->
-          <p>
-            <a href="#" role="button" aria-label="Read more about the bee story">
-                <strong>Read More</strong>
-            </a>
-        </p>
-        
-          <!-- Enhanced image alt text for better context -->
-          <img src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/bee.jpg?raw=true" 
-               alt="Close-up of a bee sitting on a vibrant flower, looking inquisitive" />
-      </article>
 
-      </div>
+  <div class="side-by-side">
       <div class="column">
-        <article>
-    <!-- Improved alt text for accessibility -->
-    <img src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/telephone.jpg?raw=true" 
-         alt="A red telephone booth located in London, a classic symbol of the city" />
+          <div class="tier-header">
+              <h2 tabindex="0">In the news</h2>
+          </div>
+          <article>
+              <h3 class="headline">
+                  Bee wonders if maybe everyone else is a drone and he's the only one who has it all "figured out" – The life of a misunderstood bee.
+              </h3>
+              <p>
+                  <a href="#" role="button" aria-label="Read more about the bee story">
+                      <strong>Read More</strong>
+                  </a>
+              </p>
+              <img src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/bee.jpg?raw=true" 
+                   alt="Close-up of a bee sitting on a vibrant flower, looking inquisitive" />
+          </article>
+      </div>
     
-    <div class="info">
-        <h3 class="headline">Telephone booths. How is this still a thing?</h3>
-        <p>
-          LONDON: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-          irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
-          <!-- Clearer link text for accessibility -->
-          <a href="#" aria-label="Read more about telephone booths in London">Read More</a>
-      </p>
-      
-    </div>
-</article>
-
+      <div class="column">
+          <article>
+              <img src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/telephone.jpg?raw=true" 
+                   alt="A red telephone booth located in London, a classic symbol of the city" />
+              <div class="info">
+                  <h3 class="headline">Telephone booths. How is this still a thing?</h3>
+                  <p>
+                      LONDON: Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+                      <a href="#" aria-label="Read more about telephone booths in London">Read More</a>
+                  </p>
+              </div>
+          </article>
       </div>
-    </div>
-    <div class="three-col">
+  </div>
+
+  <div class="three-col">
       <div class="tier-header">
-        <h2>Recommended</h2>
+          <h2>Recommended</h2>
       </div>
       <div class="columns">
-        <article>
-          <!-- Improved alt text for better accessibility -->
-          <img src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/dog.jpg?raw=true" 
-               alt="A dog sitting at a desk, looking at a laptop and a computer mouse, ready to assist" />
+          <article>
+              <img src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/dog.jpg?raw=true" 
+                   alt="A dog sitting at a desk, looking at a laptop and a computer mouse, ready to assist" />
+              <div class="info">
+                  <h3 class="headline">
+                      Turn man's best friend into man's best personal assistant.
+                      <a href="#" aria-label="Read more about using dogs as personal assistants in the workplace">Read More</a>
+                  </h3>
+              </div>
+          </article>
           
-               <div class="info">
-                <h3 class="headline">
-                    Turn man's best friend into man's best personal assistant.
-                    <!-- Added a descriptive aria-label for the link for screen reader users -->
-                    <a href="#" aria-label="Read more about using dogs as personal assistants in the workplace">Read More</a>
-                </h3>
-            </div>
-            
-      </article>
+          <article>
+              <img src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/coffee.jpg?raw=true" 
+                   alt="A cup of coffee on a wooden table, with steam rising from the cup" />
+              <div class="info">
+                  <h3 class="headline">
+                      San Franciscans are losing their minds over this third wave, artisanal, fair trade, handcrafted, locavore coffee.
+                      <a href="#" aria-label="Read more about the artisanal coffee trend in San Francisco">Read More</a>
+                  </h3>
+              </div>
+          </article>
       
-      <article>
-        <!-- Improved alt text for better accessibility -->
-        <img src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/coffee.jpg?raw=true" 
-             alt="A cup of coffee on a wooden table, with steam rising from the cup" />
-        
-        <div class="info">
-          <h3 class="headline">
-            San Franciscans are losing their minds over this third wave, artisanal, fair trade, handcrafted, locavore coffee.
-            <!-- Added aria-label for better link accessibility -->
-            <a href="#" aria-label="Read more about the artisanal coffee trend in San Francisco">Read More</a>
-        </h3>
-        
-        </div>
-    </article>
-    
-    <article>
-      <!-- Improved alt text for better accessibility -->
-      <img src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/football.jpg?raw=true" 
-           alt="A football player hands the ball off to a teammate during a game" />
-      
-           <div class="info">
-            <h3 class="headline">
-                Sportsball team scores a touchdown to win the big game.
-                <a href="#" aria-label="Read more about the winning football game and its highlights">Read more about the football game's highlights</a>
-            </h3>
-        </div>
-        
-  </article>
-  
+          <article>
+              <img src="https://github.com/udacity/ud891/blob/gh-pages/lesson2-focus/02-dom-order/images/football.jpg?raw=true" 
+                   alt="A football player hands the ball off to a teammate during a game" />
+              <div class="info">
+                  <h3 class="headline">
+                      Sportsball team scores a touchdown to win the big game.
+                      <a href="#" aria-label="Read more about the winning football game and its highlights">Read more about the football game's highlights</a>
+                  </h3>
+              </div>
+          </article>
       </div>
-    </div>
-    
-  </main>
+  </div>
+</main>
+
   <!--   stuff can be added here :)
   <footer>
   </footer>
